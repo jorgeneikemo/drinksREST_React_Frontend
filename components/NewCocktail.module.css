@@ -1,0 +1,26 @@
+.new-cocktail {
+  width: 100%;
+  min-height: 5rem;
+  background-color: rgb(131, 190, 204);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-cocktail button {
+  border: 2px solid rgb(42, 66, 51);
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(111, 208, 148);
+  padding: 15px 32px;
+  font-size: 16px;
+  width: fit-content;
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 3rem;
+}
+.new-cocktail button:hover {
+  background-color: rgb(175, 222, 193);
+}

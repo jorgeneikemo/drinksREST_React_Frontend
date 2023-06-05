@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.cocktail-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.cocktail-form textarea {
+  max-width: 98.5%;
+  min-width: 98.5%;
+}
+
+@media (max-width: 760px) {
+  .cocktail-form {
+    width: 100%;
+  }
+}
