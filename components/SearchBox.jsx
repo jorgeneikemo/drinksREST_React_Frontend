@@ -1,5 +1,5 @@
-import { useState } from "react";
 import styles from "./SearchBox.module.css";
+import PropTypes from "prop-types";
 
 const SearchBox = (props) => {
   return (
@@ -13,6 +13,10 @@ const SearchBox = (props) => {
       ></input>
     </div>
   );
+};
+
+SearchBox.propTypes = {
+  onSearch: PropTypes.func,
 };
 
 export default SearchBox;

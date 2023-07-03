@@ -18,7 +18,11 @@ const NewCocktail = (props) => {
     <div className={styles["new-cocktail"]}>
       {/* If not editing show the addcocktail button */}
       {!isEditing && (
-        <button onClick={startEditingHandler}>Add New Cocktail</button>
+        <div className={styles["button-container"]}>
+          <button className="button success" onClick={startEditingHandler}>
+            Add New Cocktail
+          </button>
+        </div>
       )}
       {/* If editing show the form for creating a new cocktail */}
       {isEditing && (

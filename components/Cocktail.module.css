@@ -4,6 +4,7 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .card img {
@@ -13,30 +14,8 @@
   aspect-ratio: 1/1;
 }
 
-.button {
-  border-radius: 5px;
-  color: white;
-  padding: 15px 32px;
-  font-size: 16px;
-  transition: 250ms;
-}
-
-.success {
-  border: 2px solid rgb(42, 66, 51);
-  background-color: rgb(111, 208, 148);
-}
-
-.success:hover {
-  background-color: rgb(156, 238, 188);
-}
-
-.negative {
-  border: 2px solid rgb(66, 44, 42);
-  background-color: rgb(208, 127, 111);
-}
-
-.negative:hover {
-  background-color: rgb(240, 162, 146);
+.title {
+  margin-bottom: 5px;
 }
 
 .hidden {

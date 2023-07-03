@@ -35,28 +35,33 @@ const Cocktail = (props) => {
 
   return (
     <div className={styles.card}>
-      <h3>{props.title}</h3>
-      <img src={props.img}></img>
-      <p>{props.description}</p>
-      <button
-        className={`${styles.button} ${styles.success}`}
-        onClick={ClickHandler}
-      >
-        {!isVisible ? "Show Ingredients" : "Hide Ingredients"}
-      </button>
-      <div className={!isVisible ? styles.hidden : ""}>
-        <h4>Ingredients</h4>
-        <ul>
-          {props.ingredients.map((ingredient, index) => (
-            <li key={index}>
-              {ingredient.name}: {ingredient.cocktailIngredient.quantity}
-            </li>
-          ))}
-        </ul>
-        <button
-          className={`${styles.button} ${styles.negative}`}
-          onClick={deleteCocktail(props.id)}
-        >
+      <div className={styles["card-content"]}>
+        <h3>{props.title}</h3>
+        <img src={props.img}></img>
+        {!isVisible && (
+          <div>
+            <h4 className={styles.title}>Description:</h4>
+            <p>{props.description}</p>
+          </div>
+        )}
+        {isVisible && (
+          <div>
+            <h4 className={styles.title}>Ingredients:</h4>
+            <ul className={styles.list}>
+              {props.ingredients.map((ingredient, index) => (
+                <li key={index}>
+                  {ingredient.name}: {ingredient.cocktailIngredient.quantity}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+      <div>
+        <button className="button success" onClick={ClickHandler}>
+          {!isVisible ? "Show Ingredients" : "Show Description"}
+        </button>
+        <button className="button negative" onClick={deleteCocktail(props.id)}>
           {confirmBtnText}
         </button>
       </div>

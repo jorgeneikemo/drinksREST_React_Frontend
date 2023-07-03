@@ -10,6 +10,47 @@
   width: 90ch;
 }
 
+.button {
+  border-radius: 5px;
+  color: white;
+  padding: 10px 0px;
+  margin: 5px 0;
+  font-size: 16px;
+  transition: 250ms;
+  width: 100%;
+}
+
+.small {
+  padding: 2px 0px;
+}
+
+.success {
+  border: 2px solid rgb(42, 66, 51);
+  background-color: rgb(111, 208, 148);
+}
+
+.success:hover {
+  background-color: rgb(156, 238, 188);
+}
+
+.info {
+  border: 2px solid rgb(64, 81, 108);
+  background-color: rgb(111, 208, 208);
+}
+
+.info:hover {
+  background-color: rgb(156, 223, 223);
+}
+
+.negative {
+  border: 2px solid rgb(66, 44, 42);
+  background-color: rgb(208, 127, 111);
+}
+
+.negative:hover {
+  background-color: rgb(240, 162, 146);
+}
+
 @media (max-width: 768px) {
   .content {
     width: auto;

@@ -6,7 +6,30 @@
 .cocktail-form {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+}
+
+label::after {
+  content: ":";
+}
+
+input,
+textarea {
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
 }
 
 .cocktail-form textarea {

@@ -116,12 +116,22 @@ const NewCocktailForm = (props) => {
             />
           </div>
         ))}
-        <button type="button" onClick={addIngredient}>
+        <button
+          type="button"
+          className="button info small"
+          onClick={addIngredient}
+        >
           Add Ingredient
         </button>
-        <div>
-          <button type="submit">Submit</button>
-          <button type="button" onClick={props.onCancel}>
+        <div className={styles["button-container"]}>
+          <button type="submit" className="button success">
+            Submit
+          </button>
+          <button
+            type="button"
+            className="button negative"
+            onClick={props.onCancel}
+          >
             Cancel
           </button>
         </div>
